@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link rel="stylesheet" href="style.css">
+        <title>해님달님 - 동화책 스토리텔링</title>
+    </head>
+    <body onload="init()">
+        <header>
+            <a href="./index.html" class="logo">해님달님</a>
+            <ul class="menu">
+                <li id="play"><img alt="재생" title="AI 더빙 재생하기" src="assets/play-solid.svg" height="20px" onclick="mediaPlay()"></li>
+                <li id="stop"><img alt="중지" title="AI 더빙 그만 듣기" src="assets/stop-solid.svg" height="20px" onclick="mediaStop()"></li>
+                <li><img alt="안내" title="안내 페이지로" src="assets/question-circle-regular.svg" height="20px" onclick="info()"></li>
+                <li><img alt="이전 페이지로" title="이전 페이지로" src="assets/chevron-left-solid.svg" height="20px" onclick="prev()"></li>
+                <li id="currentPage">01 / 14</li>
+                <li><img alt="다음 페이지로" title="다음 페이지로" src="assets/chevron-right-solid.svg" height="20px" onclick="next()"></li>
+            </ul>
+        </header>
+        <main>
+            <section id="one">
+                <p class="up">옛날 옛적 깊은 산 속에, 오누이와 어머니가 함께 살고 있었어요.<br>아버지를 일찍 여읜 탓에, 어머니는 밤낮을 가리지 않고 고개를 넘으며 장터에 떡을 팔러 다녀오곤 했지요.</p>
+                <span class="horizontalLine"></span>
+                <p class="down">“빨리 집에 가지 않으면, 아이들이 배고플 텐데…….”<br>어머니는 서둘러 고갯길로 들어섰어요.<br>깊은 산중에 대신 돌봐줄 사람도 없어서, 어미로서 할 수 있는 것이라고는 장터에서 팔고 남은 떡을 함께 먹거나 걱정하는 수밖에 없었답니다.</p>
+            </section>
+            <section id="two">
+                <p class="up">그런데 아뿔싸!<br>첫째 고개에서 호랑이를 만나고 말았어요. 세상을 뒤흔들 듯한 포효에 어머니는 놀라 넘어질 뻔하였지요.<br>“떡 하나 주면 안 잡아먹지”<br>어머니는 너무나도 무서워서 그만 아이들에게 줄 떡 하나를 던져주고 말았어요.<br>그러자 호랑이도 만족하였는지, 살며시 숲의 저편으로 사라졌어요.</p>
+                <span class="horizontalLine"></span>
+                <p class="down">호랑이가 시야에서 사라지자 겨우 정신을 차린 어머니는, 남은 떡을 모두 아이들에게 주기로 했어요.<br>오늘 아이들을 볼 수 있는 것만으로도 다행이라는 생각에 발걸음을 서둘러 옮겼지요.</p>
+            </section>
+            <section id="three">
+                <p class="up">하지만 호랑이는 여전히 배고팠어요. 굶주린 배를 채우기 위해서 다시 수 걸음을 걸어 다음 고개로 넘어갔답니다.<br>결국 어머니와 호랑이는 다시 마주쳤어요.<br>“떡 하나 주면 안 잡아먹지”</p>
+                <span class="horizontalLine"></span>
+                <p class="down">어머니는 알면서도 남은 떡 하나를 호랑이에게 넘겨줄 수밖에 없었어요.<br>다음 고개에서도 호랑이를 만나면 어쩌나 하는 마음에 쉬이 걸음이 떼지지 않기도 했어요.<br>그러나 사랑하는 아이들을 만나기 위해서는 발걸음을 옮길 수 밖에 없었답니다.</p>
+            </section>
+            <section id="four">
+                <p class="up">그런 마음을 아는지 모르는지, 마지막 고개에서 호랑이와 어머니는 다시 마주하고 말았어요.<br>“떡 하나 주면 안 잡아먹지”<br>하지만 어머니에게는 남은 떡이 없었어요. 눈을 질끈 감고 조용히 마지막을 기다렸지요.</p>
+                <span class="horizontalLine"></span>
+                <p class="down">한편 오누이는 돌아오지 않는 어머니가 걱정스러웠어요.<br>“오빠, 엄마 언제 와?”<br>오라버니는 대답하지 못하고 그저 고개 너머를 바라볼 뿐이어요.</p>
+            </section>
+            <section id="five">
+                <p class="up">오라버니는 한참을 밖에 서 있다가 방 안으로 들어왔어요.<br>그때, 문밖에서 목소리가 들렸지요.<br>“어머니!”<br>누이는 버선발로 나서려고 하였어요. 하지만 오라버니는 그런 누이를 달래며 물었지요.</p>
+                <span class="horizontalLine"></span>
+                <p class="down">“어머니, 목소리가 왜 그러세요.”<br>“가을밤에 떡을 팔다가 목이 쉬었단다.”<br>오라버니는 문틈으로 살짝 밖을 보았어요. 호랑이의 손을 본 오라버니는 내심 놀랐지만, 누이가 놀랄까 내색할 수 없었답니다.</p>
+            </section>
+            <section id="six">
+                <p class="up">“어머니, 손은 왜 그러세요.”<br>오라버니의 목소리가 가늘게 떨렸어요. 그럴수록 누이와 맞잡은 손은 더욱 견고해졌지요.<br>“고개에서 호랑이를 피하느라 손을 다쳤단다.”</p>
+                <span class="horizontalLine"></span>
+                <p class="down">“어머니, 왜 이렇게 늦게 오셨어요.”<br>“떡이 늦게까지 팔리지 않아서 이제야 왔단다.”<br>오누이는 대답을 다 듣기도 전에 뒷문으로 자리를 옮겼어요. 마당에 심어진 나무를 누이 먼저, 오라버니가 망을 보며 뒤를 이어 올라갔답니다.</p>
+            </section>
+            <section id="seven">
+                <p class="up">그때 호랑이는 집 앞의 우물에 오누이가 비친 모습을 보았어요. 숨었다는 사실에 화가 난 호랑이는 애써 차분한 목소리로 물었지요.<br>“착한 아이들아, 거긴 어떻게 들어갔니?”<br>그러자 누이는 무심코 나무에 올랐다고 이야기해주고 말았어요.</p>
+                <span class="horizontalLine"></span>
+                <p class="down">“거긴 어떻게 올랐니?”<br>오라버니는 침착하게 생각하다, 이렇게 말했어요.<br>“참기름을 바르고 올라왔어요. 어머니.”<br>하지만 호랑이는 아무리 해봐도 나무에 오를 수 없었답니다. 그 모습이 우스워 누이는 한참을 웃었어요.<br>“도끼로 찍고 올라오면 될 텐데.”<br>어리석은 호랑이의 행동에 오라버니도 참지 못하고 그만 나무에 오르는 법을 가르쳐주고 말았답니다.</p>
+            </section>
+            <section id="eight">
+                <p class="up">호랑이가 도끼를 찾아 나무를 오르기 시작하자, 오누이에게는 살아남을 방법이 떠오르지 않았어요. 그저 하늘에 눈물로 호소할 수밖에 없었지요.<br>“저희를 구해주시려면 금 동아줄을 내려주시고 그렇지 않다면 썩은 동아줄을 내려주세요.”</p>
+                <span class="horizontalLine"></span>
+                <p class="down">그 말을 들은 호랑이는 코웃음을 치며 오라버니의 발밑까지 쫓아 올라왔어요.</p>
+                </section>
+            <section id="nine">
+                <p class="up">다급해진 오누이의 부름에 답하듯, 정말로 하늘에서 동아줄이 내려왔어요!<br>그것도 반짝반짝 빛나는 금 동아줄이어요.<br>이번에도 누이가 먼저 오르고 오라버니는 호랑이가 바짓가랑이를 잡지 못하도록 발버둥을 치며 간신히 동아줄을 붙잡았지요.<br>오라버니가 동아줄을 붙잡자, 기다렸다는 듯이 금빛 동아줄은 하늘로 오르기 시작했다나요.</p>
+                <span class="horizontalLine"></span>
+                <p class="down">호랑이는 놀란 마음도 잠시, 같은 말을 하며 쫓아갈 수 있게 빌었어요.<br>그러나 당장이라도 끊어질 듯한 썩은 동아줄이 내려오고 말았어요.<br>정말로 배가 고팠던 호랑이는 미처 보지 못하고 썩은 동아줄을 붙잡았답니다.</p>
+            </section>
+            <section id="ten">
+                <p class="up">호랑이는 그 자리에서 동아줄이 끊어져, 쓰러지고 말았어요.</p>
+                <span class="horizontalLine"></span>
+                <p class="down">하지만 누이는 후에 해님이, 오라버니는 달님이 되어 사람들과 영원히 함께하게 되었답니다.</p>
+            </section>
+            <section id="info">
+                <div>
+                    <img id="infoPlayBtn" alt="재생" title="AI 더빙으로 정보 듣기" src="assets/play-solid.svg" height="20px" onclick="infoPlay()">
+                    <img id="infoStopBtn" alt="정지" title="AI 더빙으로 정보 그만 듣기" src="assets/stop-solid.svg" height="20px" onclick="infoStop()">
+                    <img alt="닫기" title="닫기" src="assets/times-solid.svg" height="20px" onclick="infoClose()">
+                </div>
+                <p><span class="iropke">&copy;</span> 2020 윤정민</p>
+                <p>이 웹사이트는 2020학년도 2학기 인터넷 프로그래밍 전공 선택 수업의 기말 실습 프로젝트 과제로 컴퓨터소프트웨어공학과의 종이상자가 제작하였습니다. 본 프로젝트를 완성하기 위해 아래와 같은 리소스를 사용하였고, 각 리소스의 라이선스를 기재하였습니다.</p>
+                <p>아이콘 - Font Awesome 5 / 라이선스: Creative Commons Attribution 4.0 International <a class="underlined" href="https://fontawesome.com/license/free" target="_blank">관련 링크</a></p>
+                <p>글꼴 - <a href="https://noonnu.cc/font_page/342">카페24 고운밤</a> / <a href="https://iropke.com/archive/iropke-batang-css.html">이롭게 바탕체</a> / <a href="https://fonts.google.com/specimen/Nanum+Myeongjo?subset=korean#about">나눔명조</a><br>각 글꼴의 저작권은 카페24, 주식회사 이롭게, 주식회사 네이버에 있으며 웹글꼴 호스팅은 프로젝트 눈누, 주식회사 이롭게, Google에서 제공해주셨습니다.</p>
+                <p>동화 해님달님(해와 달이 된 오누이) - 인터넷에 공개된 줄거리를 바탕으로 직접 각색하였으며, 각색한 내용에 한하여 저작권을 갖습니다. <a class="underlined" href="https://folkency.nfm.go.kr/kr/topic/detail/6006" target="_blank">관련 링크 #1</a> <a class="underlined" href="http://encykorea.aks.ac.kr/Contents/Item/E0062663" target="_blank">관련 링크 #2</a> 등</p>
+                <p>그림 - 각색한 내용을 바탕으로 직접 그렸습니다. 다만 제작 초기 테스트를 위해 <a class="underlined" href="https://pixabay.com/ko/photos/%EB%B2%A0%ED%8A%B8%EB%82%A8-%ED%99%98%EA%B2%BD-%EC%9E%90%EC%97%B0-%ED%92%8D%EA%B2%BD-3059529/" target="_blank">인터넷의 무료 이미지</a>를 사용하였습니다.</p>
+                <p>음성 - 네이버의 <a class="underlined" href="https://clovadubbing.naver.com/" target="_blank">클로바 더빙(CLOVA Dubbing)</a> 서비스를 이용하여 기계 음성을 생성하였습니다.</p>
+            </section>
+        </main>
+        <footer>
+            <p><span class="iropke">&copy;</span> 2020 - 2022 종이상자</p>
+        </footer>
+        <script type="text/javascript" src="sunmoon.js"></script>
+    </body>
+</html>
